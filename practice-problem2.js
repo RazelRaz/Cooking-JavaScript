@@ -1,9 +1,11 @@
 // sum the array elements with loop (solution 2)
 
-var x = [ 10, 20, 30];
+var box = [3,4,2];
 let sum = 0;
 
-for (let i = 0; i < x.length; i++) {
-    sum = sum + x[i]
+for (let index = 0; index < box.length; index++) {
+    sum = sum + box[index];
+    
 }
+
 console.log(sum);
