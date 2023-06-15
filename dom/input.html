@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Working With Form Input</title>
+</head>
+<body>
+    
+    <input type="text" id="inp1"><br>
+    <input type="text" id="inp2"><br>
+    <button onclick="addTwoNumbers()">Add</button>
+    
+
+    <script>
+        
+
+        function addTwoNumbers(){
+            const inp1 = document.getElementById('inp1').value;
+            const inp2 = document.getElementById('inp2').value;
+
+            const total = parseFloat(inp1) + parseFloat(inp2);
+            alert(total)
+           
+        }
+    </script>
+</body>
+</html>
