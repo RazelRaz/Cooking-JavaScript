@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector - DOM</title>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    
+    <h1>H1</h1>
+    <p class="para">Para</p>
+    <h4 name="para4">H4</h4>
+    <h6 id="headsix"></h6>
+
+<br>
+<button onclick="findElements()">Click</button>
+    <script>
+
+        function findElements(){
+            document.querySelector('h1').innerHTML = 'Im h1 Heading';
+            document.querySelector('.para').innerHTML = 'im Paragraph';
+            document.querySelector('h4[name="para4"]').innerHTML = 'Paragraph 4 is H4';
+            document.querySelector('#headsix').innerHTML = 'Im Heading 6';
+        }
+        
+
+    </script>
+</body>
+</html>
